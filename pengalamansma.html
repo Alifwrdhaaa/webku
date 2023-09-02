@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="">
+    <title></title>
+    <style>
+        body{
+            background-image: url(warnaa.jpg);
+            background-size:100% 100%;
+            margin: auto;
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+        }
+
+        .menu {
+    font-family:arial;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+    background:none;
+    border-radius:5px;
+    font-size: 18px;
+}
+
+label{
+    font-family:arial;
+    font-size: 20pt;
+    color: white;
+    margin: 10px;
+    padding:15px;
+    float: left;
+}
+
+.menu ul {
+    margin:0px;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+}
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li a {
+    display: block;
+    text-decoration:none;
+    padding: 20px;
+    color:white;
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a:hover {
+    display: block;
+    color: blue;
+    background: #222;
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.menu ul li .dropdown {
+    display: none;
+}
+.menu ul li:hover .dropdown {
+    display: block;
+    background: none;
+    position: absolute;
+    padding: 10px;
+}
+.menu ul li:hover .dropdown li {
+    display: block;
+}
+.table1 {
+     position: relative;
+        top: 65px;
+        border: 1px solid #000;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #f2f5f7;
+}
+ 
+.table1 tr th{
+    background: #35A9DB;
+    color: #fff;
+    font-weight: normal;
+}
+ 
+.table1, th, td {
+    padding: 8px 20px;
+    text-align: center;
+}
+ 
+.table1 tr:hover {
+    background-color: #f5f5f5;
+}
+ 
+.table1 tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            margin: 80px;
+            align-items: center;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+        img{
+            object-fit: cover;
+        }
+        .grid > article{
+            box-shadow: 10px 5px 5px 0px black;
+            border-radius: 30px;
+            text-align: center;
+            background: whitesmoke;
+            width: 270px;
+            transition: transform;
+        }
+        .grid > article img{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            /**width: 100%;**/
+        }
+        /**.konten{
+            text-transform: uppercase;
+            cursor: progress;
+        }**/
+        .grid > article:hover{
+            transform: rotate(15deg);
+            /**transform: scale(0.5);**/
+            transform: scale(1.2);
+            /**transform: translate(50px);**/
+        }
+        @media (max-width:1000px){
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (max-width:800px){
+            .grid{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="menu">
+        <label>Muhammad Alif Wardana</label>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="grid">
+            <article>
+                <img src="1.jpg" width="270px" height="270px">
+                <div class="konten">
+                    <h2>Fotografer</h2>
+                    <p>salah satu aktivitas saya yang slalu saya lakukan setiap weekend</p>
+                </div>
+            </article>
+            <article>
+                <img src="3 .jpg" width="270px" height="270px" >
+                <div class="konten">
+                    <h2>Futsal</h2>
+                    <p>salah satu aktivitas yang saya geluti dari saya smp hingga sekarang</p>
+                </div>
+            </article>
+            <article>
+                <img src="4 (2).jpg" width="270px" height="270px">
+                <div class="konten">
+                    <h2>Advanture</h2>
+                    <p>salah satu aktivitas saya yang saya sukai dari kecil yaitu naik gunung</p>
+                </div>
+            </article>
+            <article>
+                <img src="4.jpg" width="270px" height="270px">
+                <div class="konten">
+                    <h2>Sepak Bola</h2>
+                    <p>Salah satu aktivitas saya yang membuat saya bisa pergi ke tokyo japan yaitu sepak bola</p>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
